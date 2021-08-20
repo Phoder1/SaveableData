@@ -1,0 +1,18 @@
+{
+    "name": "alontalmi.saveabledata.Editor",
+    "rootNamespace": "Phoder1.SaveableData",
+    "references": [
+        "GUID:0b89dd95a29100b47be1b320f1f2325d"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
