@@ -1,0 +1,17 @@
+{
+  "name": "com.alontalmi.saveabledata",
+  "version": "1.0.0",
+  "displayName": "Saveable Data",
+  "description": "A relativly simple to use abstract saveable data class with data caching.",
+  "keywords": [
+    "Saving",
+    "Data",
+    "ease of use",
+    "tool"
+  ],
+  "author": {
+    "name": "Alon Talmi",
+    "email": "alontalmi@protonmail.com",
+    "url": "https://github.com/Phoder1"
+  }
+}
