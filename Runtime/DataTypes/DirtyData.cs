@@ -22,10 +22,6 @@ namespace Phoder1.SaveableData
     {
         [NonSerialized]
         private bool _isDirty = false;
-
-        protected DirtyData() { }
-
-
         public virtual bool IsDirty
         {
             get => _isDirty;

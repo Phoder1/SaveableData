@@ -16,10 +16,11 @@ namespace Phoder1.SaveableData
     public class SaveableData<T> : DirtyData, ISaveable where T : DirtyData, ISaveable, new()
     {
         #region Singleton
-        protected SaveableData() { }
+        protected SaveableData()
+        {
+            this.Subscribe();
+        }
         private static T _instance = null;
-
-
         public static T Instance
         {
             get
@@ -34,7 +35,6 @@ namespace Phoder1.SaveableData
         }
         #endregion
         #region Naming Conventions
-
         //Naming conventions are used to consistently determin the directory in which you save the data by it's type
         public static string DirectoryPath => DataHandler.DirectoryPath;
         public static string FilePath => DirectoryPath + FileName + ".txt";
@@ -143,6 +143,7 @@ namespace Phoder1.SaveableData
                 if (_instance == null)
                     return false;
 
+                _instance.Subscribe();
                 OnLoad?.Invoke();
                 return true;
             }

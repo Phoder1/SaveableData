@@ -16,7 +16,7 @@ namespace Phoder1.SaveableData
         public static bool DirectoryExists(string path) => Directory.Exists(path);
         #endregion
         #region Observer
-        private static List<ISaveable> saveables = new List<ISaveable>();
+        private static readonly List<ISaveable> saveables = new List<ISaveable>();
         public static void Subscribe(this ISaveable saveable)
         {
             if (saveables.Contains(saveable))
